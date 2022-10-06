@@ -14,7 +14,7 @@
           <tr>
             <th scope="row">{{ $record->id }}</th>
             <td>{{ $record->product_name }}</td>
-            <td>{{ $record->price }}</td>
+            <td>@currency($record->price)</td>
             <td>{{ $record->stock }}</td>
           </tr>
         @endforeach
